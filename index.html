@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Exercise 3</title>
-</head>
+    <title></title>
+    <link rel="stylesheet" href="">
+    <script src="planet.js"></script>
+
 <body>
-    <center>
-        <h1>Daftar Planet</h1>
-    </center>
+    <div class="container">
+        <div class="row">
+            <h1>Planet List</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+            </div>
+            <div class="rol-md-5">
+                <div class="input-group">
+                    <div class="input-group-prepent">
+                        <div class="input-group-text"id="">Filter</div></span>
+                    </div>
+                    <input type="text" class="form-control" oninput="f_filter()" placeholder="Filter" id="filter">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="info">
+                            <tr>
+                                <th class="col">No</th>
+                                <th class="col">Name</th>
+                                <th class="col">Rotation Periode</th>
+                                <th class="col">Orbital Periode</th>
+                                <th class="col">Diameter</th>
+                                <th class="col">Climate</th>
+                                <th class="col">Gravity</th>
+                                <th class="col">Terrain</th>
+                                <th class="col">Surface water</th>
+                                <th class="col">Population</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
 </body>
+
 </html>
